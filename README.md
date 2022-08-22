@@ -6,11 +6,14 @@
 
 ## Description
 
-Install and Start after clone
+Install and Start after clone inside folder
 
 ## Installation
 
 ```bash
+#for install concurrently
+$ npm install
+#install all for back and frontend
 $ npm run install-all
 ```
 
