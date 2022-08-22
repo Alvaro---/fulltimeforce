@@ -11,7 +11,7 @@ const Title = styled.h4`
 
 const ContainerList = styled.ul`
   ${tw`
-        w-80
+        w-auto
         list-decimal
         border border-indigo-200
     `}
