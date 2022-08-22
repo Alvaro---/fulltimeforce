@@ -15,7 +15,7 @@ export class AppService {
     } catch (error) {
       console.log(error);
     }
-    console.log('res', res.data);
+    // console.log('res', res.data);
     return res.data;
   }
 

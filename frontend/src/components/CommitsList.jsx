@@ -41,7 +41,9 @@ export const CommitsList = ({ user, rama }) => {
         {isLoading && <p>Loading Data...</p>}
         {[...commits].reverse().map((commit) => (
           <Item key={commit.id}>
-            <a href={commit.url}> {commit.message}</a>
+            <a href={commit.url} target='_blank'>
+              {commit.message}
+            </a>
           </Item>
         ))}
       </ContainerList>
