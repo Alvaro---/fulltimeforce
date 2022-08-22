@@ -31,6 +31,6 @@ module.exports = {
         "no-empty-function": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@angular-eslint/no-empty-lifecycle-method": "off",
-        "comma-dangle": ["error", "never"],
+        "comma-dangle": 0,
     },
 };
