@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { InfoCard } from './components/InfoCard';
 import { CommitsList } from './components/CommitsList';
+import { useState } from 'react';
+
+const USER_NAME = 'Alvaro---';
+const BRANCH_NAME = 'fulltimeforce';
 
 const AppContainer = styled.div`
   ${tw`
@@ -26,11 +30,14 @@ const Title = styled.h3`
 `;
 
 function App() {
+  const [user] = useState(USER_NAME);
+  const [rama] = useState(BRANCH_NAME);
+
   return (
     <AppContainer>
       <Title>GitHub API - Take Home Test</Title>
-      <InfoCard />
-      <CommitsList />
+      <InfoCard user={user} rama={rama} />
+      <CommitsList user={user} rama={rama} />
     </AppContainer>
   );
 }
